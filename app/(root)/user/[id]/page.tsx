@@ -1,9 +1,6 @@
 import { authOptions } from "@/auth";
 import { client } from "@/sanity/lib/client";
-import {
-    AUTHOR_BY_GITHUB_ID_QUERY,
-    AUTHOR_BY_ID_QUERY,
-} from "@/sanity/lib/queries";
+import { AUTHOR_BY_ID_QUERY } from "@/sanity/lib/queries";
 
 import { getServerSession } from "next-auth";
 import { notFound } from "next/navigation";
