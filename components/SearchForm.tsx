@@ -32,14 +32,17 @@ const SearchForm = ({ query }: { query?: string }) => {
     };
 
     return (
-        <form onSubmit={handleSubmit} className="search-form">
+        <form
+            onSubmit={handleSubmit}
+            className="search-form outline-4 outline-indigo-800 "
+        >
             <input
                 type="text"
                 name="query"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 placeholder="Search Startups..."
-                className="search-input"
+                className="search-input text-black"
             />
             {showButtons && (
                 <div className="flex gap-2 ml-2">
